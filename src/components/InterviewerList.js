@@ -1,33 +1,30 @@
-import React from "react";
-import InterviewerListItem from "components/InterviewerListItem"
-import classnames from "classnames";
-import "components/InterviewerList.scss"
+import React from 'react';
+import 'components/InterviewerList.scss';
+import InterviewerListItem from 'components/InterviewerListItem';
 
+export default function InterviewerList(props) {
+  /*Takes in Three props
+  interviewers: array of objs containing info of each interviewer
+  interviewer: id
+  setInterviewer:function; accepts id of interviewer
+  */ 
 
-
-export default function InterviewerList(props){
-
-  let interviewer = "";
-
-  if (Array.isArray(props.interviewers)) {
-    interviewer = props.interviewers.map(interviewer => (
-      <InterviewerListItem
-        key={interviewer.id}
-        name={interviewer.name}
-        avatar={interviewer.avatar}
-        selected={interviewer.id === props.interviewer}
-        setInterviewer={props.setInterviewer}  
+  const interviewers = props.interviewers.map(interviewerObj => {
+    return (
+      <InterviewerListItem 
+        key={interviewerObj.id}
+        name={interviewerObj.interviewer}
+        avatar={interviewerObj.avatar}
+        selected={interviewerObj.id === props.value}
+        setInterviewer={(event) => props.onChange(interviewerObj.id)}
       />
-    ))
-  }
-
+    )
+  })
 
   return (
     <section className="interviewers">
-    <h4 className="interviewers__header text--light">Interviewer</h4>
-    <ul className="interviewers__list">
-      { interviewer }
-    </ul>
-    </section>
+      <h4 className="interviewers__header text--light">Interviewers</h4>
+      <ul className="interviewers__list">{interviewers}</ul>
+    </section> 
   )
-} 
+}
