@@ -12,9 +12,9 @@
     "react-scripts": "3.0.0"
   },
   "proxy": "http://localhost:8001",
-  "test:server": "NODE_ENV=test npm start",
+
   "scripts": {
-    "cypress:open": "cypress open",
+    "cypress": "cypress open -P .",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

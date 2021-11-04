@@ -1,4 +1,3 @@
-
 /*
   We are rendering `<Application />` down below, so we need React.createElement
 */
