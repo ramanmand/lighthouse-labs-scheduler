@@ -1,14 +1,14 @@
 # Interview Scheduler
 A project built with the React framework. Accesses data from a (separate) API server in order to display and update information regarding interviews.
 
-Technologies Used
+# Project Stack
 
--React
--Express
--Webpack, Babel
--Axios
--Storybook, Webpack Dev Server, Jest, Testing Library
--Create React App
+Front-End: React, Axios, JSX, HTML, SASS, JavaScript
+
+Back-End: Express, Node.js, PostgreSQL
+
+Testing: Storybook, Webpack Dev Server, Jest, Testing Library and Cypress
+
 
 !["screenshot of new appointment page"](https://github.com/ramanmand/lighthouse-labs-scheduler/blob/master/docs/Booking%20an%20appointment.png)
 
@@ -37,22 +37,30 @@ npm test
 npm run storybook
 ```
 ## Dependencies
--Axios
--Classnames
--Normalize.css
--React
--React-dom
--React-scripts
--Babel/core
--Storybook/addon-actions
--Storybook/addon-backgrounds
--Storybook/addon-links
--Storybook/addons
--Storybook/react
--Testing-library/jest-dom
--Testing-library/react
--Testing-library/react-hooks
--Babel-loader
--Node-sass
--Prop-types
--React-test-renderer
+- Axios
+- Classnames
+- Normalize.css
+- React
+- React-dom
+- React-scripts
+- Babel/core
+- Storybook/addon-actions
+- Storybook/addon-backgrounds
+- Storybook/addon-links
+- Storybook/addons
+- Storybook/react
+- Testing-library/jest-dom
+- Testing-library/react
+- Testing-library/react-hooks
+- Babel-loader
+- Node-sass
+- Prop-types
+- React-test-renderer
+
+## Additional information
+Scheduler API server and client server should run simultaneously for full functionality. Follow to steps below to access the API:
+- Start by forking and cloning the scheduler-api server [here](https://github.com/lighthouse-labs/scheduler-api).
+- Follow the steps outlined in README to install and setup the database
+- Fork and clone this repo
+- Navigate to the root directory and install dependencies with npm install
+- Once you have the database setup and the scheduler-api server running, run the following command - from the root directory of the project `npm start`.
