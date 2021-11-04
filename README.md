@@ -10,10 +10,11 @@ Technologies Used
 -Storybook, Webpack Dev Server, Jest, Testing Library
 -Create React App
 
-!["screenshot of main page"](https://github.com/ramanmand/tweeter/blob/master/screenshots/main-page.png)
+!["screenshot of new appointment page"](https://github.com/ramanmand/lighthouse-labs-scheduler/blob/master/docs/Booking%20an%20appointment.png)
 
-!["screenshot of new tweet page"](https://github.com/ramanmand/tweeter/blob/master/screenshots/new-tweet-page.png)
+!["screenshot of delete an appointment"](https://github.com/ramanmand/lighthouse-labs-scheduler/blob/master/docs/Deleting%20an%20appointment.png)
 
+!["screenshot of Landing page"](https://github.com/ramanmand/lighthouse-labs-scheduler/blob/master/docs/Landing%20Page.png)
 ## Setup
 
 Install dependencies with `npm install`.
