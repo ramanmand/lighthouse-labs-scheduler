@@ -1,3 +1,4 @@
+
 /*
   We are rendering `<Application />` down below, so we need React.createElement
 */
@@ -44,44 +45,5 @@ const interviewer = {
 describe("Appointment", () => {
   it("renders without crashing", () => {
     render(<Appointment />);
-  });
-
-  it("Confirm renders w/o crashing", () => {
-    render(<Confirm 
-      message="Confirm"
-    />);
-  });
-
-  it("Empty renders w/o crashing", () => {
-    render(<Empty />);
-  });
-
-  it("Error renders w/o crashing", () => {
-    render(<Error 
-      message="Oops"
-    />);
-  });
-
-  it("Form renders w/o crashing", () => {
-    render(<Form 
-      name={interviewer}
-      value={2}
-      interviewers={interviewers}
-    />);
-  });
-
-  it("Header renders w/o crashing", () => {
-    render(<Header />);
-  });
-
-  it("Show renders w/o crashing", () => {
-    render(<Show 
-      student="random"
-      interviewer={interviewer}
-    />);
-  });
-
-  it("Status renders w/o crashing", () => {
-    render(<Status />);
   });
 });
