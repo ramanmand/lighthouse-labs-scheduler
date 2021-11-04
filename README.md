@@ -58,7 +58,7 @@ npm run storybook
 - React-test-renderer
 
 ## Additional information
-Scheduler API server and client server should run simultaneously for full functionality. Follow to steps below to access the API:
+Scheduler API server and client server should run simultaneously for full functionality. Follow the steps below to access the API:
 - Start by forking and cloning the scheduler-api server [here](https://github.com/lighthouse-labs/scheduler-api).
 - Follow the steps outlined in README to install and setup the database
 - Fork and clone this repo
