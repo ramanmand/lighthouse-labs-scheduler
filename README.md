@@ -10,6 +10,10 @@ Technologies Used
 -Storybook, Webpack Dev Server, Jest, Testing Library
 -Create React App
 
+!["screenshot of main page"](https://github.com/ramanmand/tweeter/blob/master/screenshots/main-page.png)
+
+!["screenshot of new tweet page"](https://github.com/ramanmand/tweeter/blob/master/screenshots/new-tweet-page.png)
+
 ## Setup
 
 Install dependencies with `npm install`.
